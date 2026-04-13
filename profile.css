@@ -273,3 +273,73 @@ footer {
     .nav-links { display: none; } /* Hides menu links on mobile for simplicity */
     .btn-outline { margin-left: 0; margin-top: 1rem; display: block; width: fit-content; margin: 10px auto; }
 }
+
+
+/* --- QUOTE SECTION --- */
+.quote-container {
+    padding: 100px 20px;
+    background-color: var(--primary-gradient) ; /* Deep black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-content {
+    max-width: 800px;
+    position: relative;
+}
+
+/* Subtle label at the top */
+.quote-label {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+/* The Quote Itself */
+.quote-text {
+    font-size: 2.5rem;
+    font-weight: 300; /* Light weight looks more modern */
+    line-height: 1.4;
+    color: #efefef;
+    font-style: italic;
+    position: relative;
+}
+
+/* Decorative Quote Mark (Large & Subtle) */
+
+/* Modern Accent Line */
+.accent-line {
+    width: 60px;
+    height: 3px;
+    background-color: #E50914; /* Your XP-Stream Red */
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+/* Responsive adjustment for phones */
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 1.6rem;
+    }
+    .quote-container {
+        padding: 60px 20px;
+    }
+}
+
+
+.quote-content {
+    opacity: 2;
+    transform: translateY(20px);
+    transition: all 1.2s ease-out;
+}
+
+/* Use this class when the user scrolls to the section */
+.quote-content.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
