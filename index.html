@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standard meta tags for character set and mobile responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank's Portfolio</title>
+    
+    <!-- Loading the "Outfit" font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Loading Font Awesome for icons (like the code, server, and social media icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Linking your custom CSS style file -->
+    <link rel="stylesheet" href="profile.css">
+    
+    <!-- Linking your custom JavaScript file. 'defer' means it waits until HTML is loaded to run -->
+    <script src="profile.js" defer></script>
+</head>
+<body>
+
+    <!-- These divs create the glowing blur effect in the background -->
+    <div class="background-glow"></div>
+    <div class="background-glow"></div>
+
+    <!-- Navigation Bar at the top -->
+    <nav>
+        <!-- Your Logo/Name -->
+        <div class="logo">FrankDev.</div>
+        
+        <!-- List of navigation links -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section: The main introduction area -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <!-- 'hidden' class is used by JS to fade this in later -->
+            <h1 class="hidden">Hello, I'm Frank.<br><span>Creative Developer</span></h1>
+            <p class="hidden">I build immersive web experiences and interactive digital products with a focus on motion and clean design.</p>
+            
+            <!-- Buttons -->
+            <div class="hidden" style="margin-top: 2rem;">
+                <a href="#projects" class="btn">View Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Hero Image" class="hero-img hidden">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title hidden">My Expertise</h2>
+        
+        <!-- A Grid container to hold the 3 skill cards side-by-side -->
+        <div class="grid-container">
+            <div class="card hidden">
+                <i class="fa-solid fa-code"></i> <!-- Code Icon -->
+                <h3>Frontend Dev</h3>
+                <p>HTML5, CSS3, React,</p>
+            </div>
+            <div class="card hidden">
+                <i class="fa-solid fa-server"></i> <!-- Server Icon -->
+                <h3>Backend</h3>
+                <p>Node.js, Python, MongoDB, </p>
+            </div>
+            <div class="card hidden">
+                <i class="fa-solid fa-pen-nib"></i> <!-- Design Icon -->
+                <h3>UI/UX Design</h3>
+                <p>Figma, Adobe XD, Prototyping, Wireframing</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+<section id="projects">
+    <h2 class="section-title">Latest Work</h2>
+    <div class="grid-container">
+        
+        <!-- Project 1: THE STAR -->
+        <div class="card show-on-scroll">
+            <img src="/images/social-preview.jpg" alt="XP-Stream" class="project-img">
+            <h3>XP-Stream Movie App</h3>
+            <p>A cinematic web app using TMDb API, Vite, and LocalStorage for watchlists.</p>
+            <div class="tags"><span>Vite</span> <span>API</span> <span>JavaScript</span></div>
+            <a href="https://xp-stream.onrender.com" target="_blank" class="link-text">Live Demo &rarr;</a>
+        </div>
+        
+        <!-- Project 2: Course Work -->
+        <div class="card show-on-scroll">
+            <img src="/images/sleepoutside.jpg" alt="SleepOutside" class="project-img">
+            <h3>SleepOutside E-Commerce</h3>
+            <p>E-commerce platform for camping gear built with modular JavaScript and JSON.</p>
+            <div class="tags"><span>JSON</span> <span>Modules</span></div>
+            <a href="https://wdd330-sleepoutside-6wdr.onrender.com/" target="_blank" class="link-text">View Project &rarr;</a>
+        </div>
+        
+        <!-- Project 3: Previous Project -->
+        <div class="card show-on-scroll">
+            <img src="/images/tourism.jpg" alt="Eco Tourism" class="project-img">
+            <h3>Eco Tourism Site</h3>
+            <p>Responsive multi-page website showcasing local tourism and community resources.</p>
+            <div class="tags"><span>HTML/CSS</span> <span>Responsive</span></div>
+            <a href="https://github.com/frank-job/wdd131/tree/main/ecotourism" target="_blank" class="link-text">View Project &rarr;</a>
+        </div>
+    </div>
+</section>
+
+   
+    <section id="contact">
+        <h2 class="section-title hidden">Let's Connect</h2>
+        <div class="contact-container hidden">
+            <p style="text-align: center; color: #94a3b8;">Currently open for coding opportunities. Feel free to reach out!</p>
+            
+        
+            <a href="mailto:frank@example.com" class="btn">Send an Email</a>
+        
+           <div class="social-links">
+    <a href="https://github.com/frank-job" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+    
+  
+    <a href="https://wa.me/256760015088" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    
+    
+    <a href="https://t.me/Frank Tech" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FrankDev Portfolio.</p>
+    </footer>
+
+</body>
+</html>
